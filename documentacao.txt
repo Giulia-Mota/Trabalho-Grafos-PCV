@@ -1,0 +1,29 @@
+Feito por Giulia Mota Apinagés dos Santos e José Vitor Alves
+
+O algoritmo utiliza uma matriz de distâncias pré-definida entre 15 cidades (lau15). 
+Cada linha e coluna representa uma cidade, e o valor distancias[i][j] indica a distância entre a cidade i e a cidade j. 
+Além disso, os parâmetros do algoritmo podem ser ajustados diretamente no código:
+
+num_formigas: Número de formigas (padrão: 20).
+iteracoes: Número de iterações (padrão: 100).
+alfa: Peso dos feromônios (padrão: 1.0).
+beta: Peso da heurística (padrão: 2.0).
+taxa_evaporacao: Taxa de evaporação dos feromônios (padrão: 0.5).
+Q: Constante para atualização de feromônios (padrão: 100).
+
+Durante a execução, o algoritmo imprime o progresso a cada iteração, mostrando o melhor custo encontrado até o momento. 
+Ao final da execução, ele exibe o melhor caminho encontrado e o custo total desse caminho. 
+O custo é a soma das distâncias percorridas no caminho, incluindo o retorno à cidade inicial.
+
+A saída esperada é:
+
+Iteração 1: Melhor custo = 402
+Iteração 2: Melhor custo = 347
+Iteração 3: Melhor custo = 347
+.
+.
+.
+Iteração 100: Melhor custo = 291
+
+Melhor caminho encontrado: [0, 12, 1, 14, 8, 4, 6, 2, 11, 13, 9, 7, 5, 3, 10, 0]
+Custo do melhor caminho: 291
